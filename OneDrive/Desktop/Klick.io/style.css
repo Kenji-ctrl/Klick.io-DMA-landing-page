@@ -1,0 +1,143 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --accent: #3988ff;
+    --black: #0c0c0c;
+    --grey: #1d1c21;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+section {
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--black);
+    color: white;
+}
+
+/* Navbar */
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+}
+
+header.sticky {
+    background: var(--black);
+    border-bottom: 1px rgba(0, 0, 0, 0.548) solid;
+    padding: 15px 100px;
+}
+
+header .brand {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+header .brand:hover {
+    color: var(--accent);
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 0 10px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+header .menu a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100px;
+    height: 2px;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+header .menu a:hover {
+    color: var(--accent);
+}
+
+header .menu a:hover::before {
+    transform: scaleX(1.4);
+}
+
+header .btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 140px;
+    padding: 0 17px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    fill: #000;
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: 0;
+}
+
+.btn-2:focus {
+    color: white;
+}
+
+.btn-2:hover,
+.btn-2:active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
