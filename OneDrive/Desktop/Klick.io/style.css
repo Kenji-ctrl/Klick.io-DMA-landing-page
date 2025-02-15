@@ -1,11 +1,10 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+ @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "inter", sans-serif;
 }
 
 :root {
@@ -141,3 +140,166 @@ header .btn {
     border-color: var(--accent);
     color: white;
 }
+
+/* Hero Page Section */
+.hero-page {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/hero-page-img.png);
+    z-index: -10;
+}
+
+.gradient {
+    width: 774px;
+    height: auto;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.hero-page .gradient-v {
+    left: 290px;
+    top: 100px;
+}
+
+.hero-page-headline {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 1027px;
+    margin: 100px 0px 0px 100px;
+    z-index: 1;
+}
+
+.hero-page-headline h1 {
+    font-size: 96px;
+}
+
+.tagline {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.tagline h2 {
+  font-size: 96px;
+}
+
+.tagline-sub {
+    background-image: url(assets/tagline-img.png);
+    height: 86px;
+    width: 639px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline-sub h3 {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.hero-page-headline p {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.btn-blue {
+    background-color: var(--accent);
+    width: 305px;
+    height: 69px;
+    font-size: 24px;
+    filter: drop-shadow(0px 3px 13px var(--accent));
+    border: 1px var(--accent) solid;
+    margin-top: 64px;
+}
+
+.btn-blue:hover {
+    filter: drop-shadow(0px 3px 20px var(--accent));
+}
+
+.brands {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+
+/* Work Preview Section */
+.preview {
+    display: flex;
+    background-color: var(--black);
+    overflow: hidden;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: auto;
+}
+
+.work-preview-box {
+    background-color: var(--grey);
+    width: 537px;
+    height: 374px;
+    border-radius: 32px;
+    background-origin: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    flex: 0 0 auto;
+    filter: drop-shadow(0px 1px 2px white);
+}
+
+/* Testimony Preview Section */
+#testimonyPreview {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    overflow-x: hidden;
+    padding-left: 80px;
+}
+
+.testimony-preview-box {
+    width: 537px;
+    height: 216px;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    background-color: var(--grey);
+    color: white;
+    filter: drop-shadow(0px 1px 5px rgba(255, 255, 255, 0.31));
+    flex: 0 0 auto;
+}
+
+.testimony-preview-box p {
+    font-size: 20px;  
+}
+
+.testimony-people {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10%;
+}
+
+.testimony-people-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-people-name h5 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.testimony-people h6 {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+

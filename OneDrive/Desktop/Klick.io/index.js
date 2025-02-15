@@ -15,4 +15,16 @@ menuBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
     menu.classList.remove("active");
-})
+});
+
+// Work & Testimoney Preview Section 
+const windowObject = window;
+windowObject.addEventListener("scroll", function () {
+    const scrollY = windowObject.scrollY;
+    const horizontalScrollElement = this.document.getElementById("workPreview");
+    const horizontalScrollElement2 = this.document.getElementById("testimonyPreview");
+
+    horizontalScrollElement.scrollLeft = scrollY * 0.2;
+    horizontalScrollElement2.scrollLeft = scrollY * 0.2;
+
+});
