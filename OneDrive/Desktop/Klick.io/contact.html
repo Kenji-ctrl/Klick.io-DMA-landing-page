@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Use for responsivenes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Klick.io</title>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="index.html" class="brand">Klick.io</a>
+    <div class="menu">
+        <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#works">Works</a>
+        <a href="pricing.html">Pricing</a>
+    </div>
+    <button class="btn-2 btn-visible" onclick="window.location.href='contact.html'">Contact Us</button>
+    <div class="btn">
+        <i class="fas fa-bars menu-btn">Today</i>
+    </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Contact Page  -->
+     <section class="contact">
+        <img src="assets/gradient-blue.png" alt="img" class="gradient gradient-blue">
+        <img src="assets/gradient-light-blue.png" alt="img" class="gradient gradient-lightblue">
+        <h1>Get in Touch with Klick.io Together</h1>
+        <p>Whether you have questions about our services, want to discuss a project, or just fancy a chat about all things digital,
+            we're here and ready to connect.
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST"> 
+            <input type="hidden" name="access_key" value="861b4ce0-5d7e-4849-be07-1d1d1f1468e8">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="number" name="contact number" placeholder="Contact No.">
+            <textarea name="description" cols="20" rows="10" placeholder="What is on your mind"></textarea>
+            <button type="submit" class="btn-2 btn-callout">Contact Us <i class="fa-solid fa-arrow-up"></i> </button>
+        </form>
+
+        
+     </section>
+
+     <!-- Footer -->
+     <section class="footer">
+        <hr id="f-hr">
+        <div class="footer-callout">
+            <a href="/">Klick.io</a>
+            <div>
+                <h5>Ready to get started?</h5>
+                <button type="button" class="btn-2 btn-callout" onclick="window.location.href='contact.html'" >Contact Us <i class="fa-solid fa-arrow-up"></i> </button>
+            </div>
+        </div>
+
+        <hr id="f-hr">
+        <div class="bottom-footer">
+            <div class="newsletter">
+                <p>Subscribe to our newsletter</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="861b4ce0-5d7e-4849-be07-1d1d1f1468e8">
+                    <input type="email" name="email_newsletter" placeholder="Email Address">
+                    <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+                </form>
+            </div>
+            <div class="footer-links">
+
+                <div class="footer-link">
+                    <h6>Services</h6>
+                    <div class="navigation">
+                        <a href="pricing.html">Media Marketing</a>
+                        <a href="pricing.html">Content Marketing</a>
+                        <a href="pricing.html">Digital Consultation</a>
+                        <a href="pricing.html">Web Design</a>
+                        <a href="pricing.html">SEO</a>
+                    </div>
+                </div>
+
+                <div class="footer-link">
+                    <h6>Navigation</h6>
+                    <div class="navigation">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="index.html#">Pricing</a>
+                    </div>
+                </div>
+
+                <div class="footer-link">
+                    <h6>Help</h6>
+                    <div class="navigation">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="social-media">
+                <a href="social-box"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="social-box"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="social-box"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="social-box"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>@ 2025 All Rights Reserved</p>
+        </div>
+      </section>
+
+<script src="index.js"></script>
+</body>
+</html>
