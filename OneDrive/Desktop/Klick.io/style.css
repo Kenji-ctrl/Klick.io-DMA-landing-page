@@ -908,6 +908,110 @@ header .btn {
 .contact form input:focus, 
 .contact form textarea:focus {
     outline: none;
+}
+
+/* Laptop and Tablet  */
+@media (max-width: 1024px) and (min-width: 0px) {
+    header {
+        padding: 20px 50px;
+    }
+    header .btn {
+        display: block;
+        color: white;
+    }
+    header .menu {
+        position: fixed;
+        background: var(--accent);
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 50px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+        color: white;
+    }
+
+    .btn-visible {
+        display: none;
+    }
+    header.sticky {
+        padding: 15px 50px;
+    }
+
+    /* Heropage Section  */
+    .hero-page-headline {
+        margin-left: 0px;
+        align-items: center;
+        width: 768px;
+    }
+    .hero-page-headline h1 {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        width: 600px;
+    }
+    .tagline h2 {
+        font-size: 48px;
+    }
+    .tagline {
+        gap: 5px;
+    }
+    .tagline-sub h3 {
+        width: 351px;
+        height: 55px;
+    }
+    .tagline-sub h3 {
+        font-size: 20px;
+    }
+    .hero-page-headline p {
+        font-size: 20px;
+        width: 512px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .gradient {
+        width: 650px;
+    }
+    .hero-page .gradient-v {
+        left: 0px;
+        top: 300px;
+    }
+    .work-preview-box {
+        width: 440px;
+        height: 330px;
+    }
+    .work-preview-box img {
+        width: 377px;
+        height: 250px;
+    }
+    .services .gradient-lightblue {
+        left: 50px;  
+    }
+    .services p {
+        width: 650px;
+        font-size: 20px;
+    }
+    .services-box {
+        font-display: column;
+    }
+    #service-img-ss {
+        width: 537px;
+    }
+    .service-box img {
+        width: 537px;
+    }
+    .about .gradient-lightblue {
+        left: 50px;
+    }
 
 }
 
