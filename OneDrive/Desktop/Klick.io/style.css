@@ -932,6 +932,10 @@ header .btn {
         transition-property: right;
     }
 
+    header .menu.active {
+        right: 0;
+    }
+
     header .menu .close-btn {
         position: absolute;
         top: 0;
@@ -940,6 +944,13 @@ header .btn {
         color: white;
     }
 
+    header .menu a {
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0px 15px;
+        color: rgb(255, 255, 255);
+    }
     .btn-visible {
         display: none;
     }
@@ -968,7 +979,7 @@ header .btn {
     .tagline {
         gap: 5px;
     }
-    .tagline-sub h3 {
+    .tagline-sub {
         width: 351px;
         height: 55px;
     }
@@ -1004,7 +1015,7 @@ header .btn {
         font-size: 20px;
     }
     .services-box {
-        font-display: column;
+        flex-direction: column;
     }
     #service-img-ss {
         width: 537px;
@@ -1043,6 +1054,9 @@ header .btn {
     .footer-callout {
         padding: 0px 50px 50px 50px;
     }
+    .footer-callout a {
+        font-size: 40px;
+    }
     .footer-callout h5 {
         font-size: 24px;
         width: 156px;
@@ -1060,6 +1074,11 @@ header .btn {
     .bottom-footer {
         flex-direction: column;
         padding: 0px 50px 0px 50px;
+    }
+    .newsletter {
+        flex-direction: row;
+        width: 680px;
+        justify-content: space-between;
     }
     .newsletter p {
         font-size: 24px;

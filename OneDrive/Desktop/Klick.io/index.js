@@ -17,7 +17,7 @@ closeBtn.addEventListener("click", () => {
     menu.classList.remove("active");
 });
 
-// Work & Testimoney Preview Section 
+// Work & Testimony Preview Section 
 const windowObject = window;
 windowObject.addEventListener("scroll", function () {
     const scrollY = windowObject.scrollY;
